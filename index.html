@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tin Shed Prophets | Blues Rock From The Heart</title>
+  <style>
+    :root {
+      --gold: #d4a84a;
+      --dark: #0a0a0a;
+      --cream: #e0dccf;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { background: var(--dark); color: var(--cream); font-family: 'Georgia', serif; line-height:1.6; }
+    
+    nav { background:#000; padding:18px; text-align:center; position:sticky; top:0; border-bottom:1px solid #222; z-index:100; }
+    nav a { color:var(--gold); margin:0 18px; text-decoration:none; font-weight:bold; letter-spacing:1px; text-transform:uppercase; font-size:0.9rem; }
+    nav a:hover { text-decoration:underline; }
+    .hero { text-align:center; padding:60px 20px 40px; background:linear-gradient(#111, #0a0a0a); }
+    .hero h1 { font-size:3.5rem; color:var(--gold); margin:10px 0; letter-spacing:5px; text-shadow: 2px 2px 8px #000; }
+    .stained-glass { max-width:1200px; width:95%; margin:30px auto; border:5px solid var(--gold); box-shadow: 0 0 40px rgba(212,168,74,0.3); display:block; }
+    .tagline { color:var(--gold); font-size:1.4rem; letter-spacing:4px; margin:20px 0; }
+    .btn { background:var(--gold); color:#000; padding:14px 32px; margin:10px; text-decoration:none; font-weight:bold; display:inline-block; border:none; cursor:pointer; transition:0.2s; }
+    .btn:hover { transform: translateY(-2px); opacity:0.9; }
+    .section { padding:90px 20px; max-width:1000px; margin:auto; text-align:center; }
+    h2 { color:var(--gold); font-size:2.4rem; margin-bottom:30px; letter-spacing:2px; }
+    
+    #band.section { max-width:1250px; }
+    .band-grid { 
+      display:grid; 
+      grid-template-columns: repeat(5, 1fr); 
+      gap:18px; 
+      margin-top:50px; 
+      width:100%;
+      align-items:start;
+    }
+    .member { 
+      text-align:center; 
+      display:flex; 
+      flex-direction:column;
+      width:100%;
+    }
+    .member img { 
+      width:100%; 
+      height:520px; 
+      border:4px solid var(--gold); 
+      object-fit:cover; 
+      object-position: top center;
+      background:#222; 
+      display:block;
+      box-shadow: 0 0 20px rgba(212,168,74,0.2);
+    }
+    .member h3 { color:var(--gold); margin-top:15px; font-size:1.1rem; letter-spacing:1px; }
+    .member p { font-size:0.9rem; color:#aaa; }
+    @media (max-width: 900px) {
+      .band-grid { gap:10px; }
+      .member img { height:360px; }
+    }
+    @media (max-width: 600px) {
+      .band-grid { grid-template-columns: repeat(2, 1fr); gap:15px; }
+      .member img { height:340px; }
+      .member:last-child { grid-column: span 2; max-width:50%; margin:0 auto; }
+    }
+    .coming-soon { background:#111; border:2px dashed #444; padding:50px 30px; margin-top:30px; }
+    footer { background:#000; text-align:center; padding:50px 20px; border-top:1px solid #222; }
+    .socials a { color:var(--gold); margin:0 12px; text-decoration:none; font-size:1.1rem; }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="#home">HOME</a>
+  <a href="#about">ABOUT</a>
+  <a href="#band">THE BAND</a>
+  <a href="#music">MUSIC</a>
+  <a href="#contact">CONTACT</a>
+</nav>
+<div id="home" class="hero">
+  <h1>TIN SHED PROPHETS</h1>
+  
+  <!-- YOUR STAINED GLASS IMAGE -->
+  <img src="Strip.jpg" alt="Tin Shed Prophets - The Five Saints" class="stained-glass">
+  
+  <p class="tagline">BLUES ROCK FROM THE HEART.</p>
+  <p>Raw. Honest. Soul, grit and groove.<br>A new five-piece bringing the blues back to the shed.</p>
+  <a href="#contact" class="btn">BOOK US</a>
+</div>
+<div id="about" class="section">
+  <h2>ABOUT</h2>
+  <p>We’re The Tin Shed Prophets. Five mates, one shed, and a whole lot of blues.  
+  <br><br>
+  Formed in 2026, we’re writing new songs and putting our own spin on the classics.  
+  No backing tracks. No click. Just five people playing from the heart.  
+  <br><br>
+  Think smoky bars, loud guitars, and songs that stick with you.</p>
+</div>
+<div id="band" class="section">
+  <h2>THE BAND</h2>
+  <div class="band-grid">
+    <div class="member">
+      <img src="Prop1.jpg" alt="Beggsy">
+      <h3>BEGGSY</h3><p>GUITAR</p>
+    </div>
+    <div class="member">
+      <img src="Prop2.jpg" alt="Kit">
+      <h3>KIT</h3><p>VOCALS</p>
+    </div>
+    <div class="member">
+      <img src="Prop3.jpg" alt="Chris">
+      <h3>CHRIS</h3><p>DRUMS</p>
+    </div>
+    <div class="member">
+      <img src="Prop4.jpg" alt="Tommy">
+      <h3>TOMMY</h3><p>BASS</p>
+    </div>
+    <div class="member">
+      <img src="Prop5.jpg" alt="Cookie">
+      <h3>COOKIE</h3><p>HARMONICA</p>
+    </div>
+  </div>
+</div>
+<div id="music" class="section">
+  <h2>MUSIC</h2>
+  <div class="coming-soon">
+    <h3 style="color:var(--gold);">New Music Coming Soon</h3>
+    <p>We’re in the shed writing and recording our first tracks.  
+    <br>Follow us and be the first to hear when we drop.</p>
+  </div>
+</div>
+<div id="contact" class="section">
+  <h2>CONTACT & BOOKINGS</h2>
+  <p>Want The Tin Shed Prophets at your pub, festival or event?</p>
+  <p style="margin:25px 0; font-size:1.2rem;"><strong>Email:</strong> <a href="mailto:tinshedprophets@gmail.com" style="color:var(--gold);">tinshedprophets@gmail.com</a></p>
+  <a href="mailto:tinshedprophets@gmail.com" class="btn">GET IN TOUCH</a>
+  
+  <div class="socials" style="margin-top:50px;">
+    <p>FOLLOW THE PROPHETS</p>
+    <a href="#">Instagram</a> | <a href="#">Facebook</a>
+  </div>
+</div>
+<footer>
+  <p>© 2026 TIN SHED PROPHETS | SYDNEY, AUSTRALIA | BLUES x ROCK</p>
+</footer>
+</body>
+</html>
